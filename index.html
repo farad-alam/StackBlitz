@@ -12,7 +12,9 @@
   </head>
   <body class="font-inter text-[16px]">
     <header data-theme="" class="dark:text-gray-300">
-      <nav class="bg-inherit md:bg-black/30 md:backdrop-blur-lg fixed top-0 left-0 w-full h-[60px]">
+      <nav
+        class="bg-inherit md:bg-black/20 md:backdrop-blur-lg fixed top-0 left-0 w-full h-[60px] z-50"
+      >
         <div class="navbar w-[95%] mx-auto">
           <div class="navbar-start">
             <div id="brand" class="flex items-center">
@@ -71,17 +73,99 @@
           </div>
         </div>
       </nav>
+      <!-- banar section -->
+      <section id="banar" class="mt-[60px]">
+        <div id="banar-context" class="w-[95%] mx-auto pb-20 pt-20 flex">
+          <!-- banar contetn area -->
+          <div id="content-aria" class="z-10">
+            <h1
+              class="leading-[125px] text-[32px] md:text-[68px] lg:text-[94px] text-gray-50"
+            >
+              How <span class="heading-span">product</span> & <br />
+              <span class="heading-span2 rounded-3xl shadow-2xl">
+                engineering</span
+              >
+              teams <br />
+              work together with AI
+            </h1>
+            <p class="w-7/12 mt-12 mb-8 text-[18px]">
+              Turn text into working web apps. Bolt handles the code while you
+              focus on your vision, letting you create and launch applications
+              directly from your browser.
+            </p>
+            <button class="cbtn bg-blue-600 !py-[12px] !px-6">
+              Try Bolt.new
+            </button>
+          </div>
+          <!-- video aria -->
+          <video
+            class="bg-video reflect-video absolute right-8 bg-black p-4 w-5/12 skew-y-12 skew-x-6 rounded-lg"
+            src="asset/v2.mp4"
+            autoplay
+            loop
+            muted
+            playsinline="true"
+          ></video>
+        </div>
+      </section>
     </header>
     <main>
-      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
-      <div class="w-96 h-96 mx-auto bg-purple-500"></div>
-      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
-      <div class="w-96 h-96 mx-auto bg-purple-500"></div>
-      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
-      <div class="w-96 h-96 mx-auto bg-purple-500"></div>
-      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
-      <div class="w-96 h-96 mx-auto bg-purple-500"></div>
-      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
+      <section id="portfolio" class="">
+        <!-- portfolio context -->
+        <div id="bg-blur" class="bg-black/70 backdrop-blur-2xl">
+          <div id="portfolio-context" class="w-4/5 mx-auto py-14">
+            <h2 class="text-xl lg:text-3xl text-gray-50 w-8/12 mx-auto">
+              Loved by frontend and product teams at the world's largest and
+              most innovative companies
+            </h2>
+            <div
+              id="brands"
+              class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 items-center"
+            >
+              <img
+                src="https://stackblitz.com/_astro/google.BKhN6lqA_LbH4h.svg"
+                alt=""
+                class="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/meta.BZYPTU9O_1lLsls.svg"
+                alt=""
+                class="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/shopify.ByHtukiT_1J8PIf.svg"
+                alt=""
+                cclass="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/salesforce.C_wubRL__2p0KMc.svg"
+                alt=""
+                class="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/intel.BTF2Cw1X_Z2kTjoX.svg"
+                alt=""
+                class="w-[130px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/mozilla.CBnnQB51_2u8144.svg"
+                alt=""
+                class="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/cloudflare.Px0iUVCo_Z1CNC1x.svg"
+                alt=""
+                class="w-[150px]"
+              />
+              <img
+                src="https://stackblitz.com/_astro/stripe.CFJCsvvZ_5RvUh.svg"
+                alt=""
+                class="w-[130px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

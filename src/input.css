@@ -2,18 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Manrope";
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope";
+  font-weight: bold;
 }
 
-.cbtn{
-    @apply bg-base-200 px-[16px] py-[5px] rounded-lg font-semibold ring-1 ring-gray-300 dark:ring-gray-600 shadow-sm
+.cbtn {
+  @apply px-[16px] py-[5px] rounded-lg font-semibold ring-1 ring-gray-300 dark:ring-gray-600 shadow-sm;
 }
-.cbtn:hover{
-    @apply bg-base-300
+.cbtn:hover {
+  @apply bg-base-300;
 }
 
-.responsive-menu{
-    @apply flex flex-col dropdown-content gap-4 items-center justify-center absolute -right-[25px] top-[44px] bg-black/30 backdrop-blur-lg w-screen h-[80vh]
+.responsive-menu {
+  @apply flex flex-col dropdown-content gap-4 items-center justify-center absolute -right-[25px] top-[44px] bg-black/30 backdrop-blur-lg w-screen h-[80vh];
+}
+
+.heading-span {
+  @apply px-4 font-normal bg-gradient-to-t from-sky-900/40 via-sky-900/40 to-sky-500/10 border border-sky-900;
+}
+.heading-span2 {
+  @apply px-4 font-normal font-serif bg-gradient-to-t from-blue-950/40 via-sky-900/40 to-sky-500/10 border border-sky-900;
+}
+
+.bg-video {
+  @apply bg-gradient-to-t from-blue-950 via-sky-900 to-sky-500 border border-sky-900 shadow-2xl;
+}
+.reflect-video {
+  -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(45%, transparent), to(#FFFFFF));
+    /* linear-gradient(to bottom, transparent, rgb(255 255 255 / 50%)); */
+}
+#portfolio{
+    background-image: url("/asset/blob-scene-haikei.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
