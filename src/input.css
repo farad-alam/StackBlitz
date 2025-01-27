@@ -6,3 +6,14 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Manrope";
     font-weight: bold;
 }
+
+.cbtn{
+    @apply bg-base-200 px-[16px] py-[5px] rounded-lg font-semibold ring-1 ring-gray-300 dark:ring-gray-600 shadow-sm
+}
+.cbtn:hover{
+    @apply bg-base-300
+}
+
+.responsive-menu{
+    @apply flex flex-col dropdown-content gap-4 items-center justify-center absolute -right-[25px] top-12 bg-black/30 backdrop-blur-lg w-screen h-[80vh]
+}

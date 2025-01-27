@@ -1,21 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StackBlitz</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="font-inter">
-    <h1 class="text-6xl">StackBlitz</h1>
-    <h1 class="text-4xl font-inter">StackBlitz</h1>
-    <button class="btn btn-primary">Hello</button>
-    <button class="btn btn-accent">Hello</button>
-    <p class="text-3xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus,
-      obcaecati fugit reprehenderit eligendi temporibus nisi similique labore
-      blanditiis nam?
-    </p>
+  <body class="font-inter text-[16px]">
+    <header data-theme="" class="dark:text-gray-300">
+      <nav class="w-[95%] mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div id="brand" class="flex items-center">
+              <svg
+                class="fill-current dark:fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                height="25px"
+                viewBox="0 -960 960 960"
+                width="30px"
+              >
+                <path
+                  d="m402.67-187.33 255-306H484.33L518-759.67l-230.33 333h149l-34 239.34ZM320-80l40-280H160l360-520h80l-40 320h240L400-80h-80Zm153-394Z"
+                />
+              </svg>
+              <a class="text-xl font-bold dark:text-gray-50">StackBlitz</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden md:flex">
+            <ul class="flex gap-4">
+              <li><a href="">Bolt.New</a></li>
+              <li>
+                <a href="">WebContainers</a>
+              </li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end gap-4 relative">
+            <a class="cbtn hidden sm:inline-flex">Signup</a>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="cbtn md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="responsive-menu"
+              >
+                <li><a href="">Bolt.New</a></li>
+                <li>
+                  <a href="">WebContainers</a>
+                </li>
+                <li><a href="">Careers</a></li>
+                <a class="cbtn sm:hidden">Signup</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
+      <div class="w-96 h-96 mx-auto bg-purple-500"></div>
+      <h1 class="text-5xl text-primary">Hello word aknrfv vsdfn</h1>
+    </main>
   </body>
 </html>
