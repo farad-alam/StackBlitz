@@ -53,13 +53,25 @@ h6 {
   background-position: center;
 }
 
-#powered-by-webcontainers{
+#powered-by-webcontainers {
   background-image: url("../asset/web-container.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-.btn-before{
-  @apply before:content-[""] before:absolute before:bottom-0 before:left-0 before:bg-sky-500 before:py-8 before:w-full z-[1]
+.btn-after {
+  @apply after:content-[""] after:absolute after:bottom-0 after:-left-[1000px] after:bg-sky-500 after:py-8 after:w-full after:-z-10 after:transition-all after:duration-500;
 }
+
+.btn-after:hover {
+  @apply after:left-0;
+}
+
+.btn-after:not(:hover) {
+  @apply after:-left-[1000px];
+}
+
+/* #c-card:hover .btn-after::after{
+  left: 0;
+} */

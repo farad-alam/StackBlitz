@@ -225,7 +225,7 @@
           <!-- container card -->
           <div
             id="c-card"
-            class="basis-7/12 relative w-full flex bg-white overflow-hidden rounded-lg pt-4 pl-8"
+            class="basis-7/12 cursor-pointer relative w-full flex bg-white overflow-hidden rounded-lg pt-4 pl-8 hover:scale-105 duration-500 group"
           >
             <div
               id="card-text"
@@ -237,16 +237,14 @@
                 Run Node.js in your browser
               </h3>
               <button
-                class="text-black  text-left font-bold py-4 z-10"
+                class="group-hover:text-gray-100 btn-after text-left font-bold py-4 z-10 group-hover:after:left-0"
               >
                 Read the release >
-                <span class="btn-before"></span>
               </button>
-              
             </div>
             <div id="img-con" class="basis-4/12 h-full">
               <img
-                class="absolute -bottom-[75px] left-[350px]"
+                class="absolute -bottom-[75px] left-[350px] group-hover:left-[420px] duration-1000 z-20"
                 src="https://stackblitz.com/_astro/img/pages/home/card-bg-webcontainer.png"
                 alt=""
               />
