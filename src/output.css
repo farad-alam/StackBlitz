@@ -1184,12 +1184,21 @@ html {
   height: 24rem;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
 
 .h-\[84px\] {
   height: 84px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .max-h-fit {
@@ -1201,8 +1210,17 @@ html {
   min-height: 24rem;
 }
 
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-4\/5 {
@@ -1263,6 +1281,10 @@ html {
   flex-direction: column;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1281,6 +1303,12 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1324,6 +1352,10 @@ html {
   background-color: inherit;
 }
 
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -1357,6 +1389,11 @@ html {
 
 .font-inter {
   font-family: Inter, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[16px\] {
@@ -1394,6 +1431,10 @@ html {
   line-height: 125px;
 }
 
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1404,6 +1445,16 @@ html {
   color: rgb(249 250 251 / var(--tw-text-opacity, 1));
 }
 
+.text-power-text {
+  --tw-text-opacity: 1;
+  color: rgb(76 237 255 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1412,6 +1463,12 @@ html {
 
 .backdrop-blur-2xl {
   --tw-backdrop-blur: blur(40px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-blur-xl {
+  --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1625,6 +1682,13 @@ h6 {
   background-position: center;
 }
 
+#powered-by-webcontainers{
+  background-image: url("/asset/web-container.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 .dark\:fill-white:is([data-theme="dark"] *) {
   fill: #fff;
 }
@@ -1658,6 +1722,10 @@ h6 {
     display: none;
   }
 
+  .md\:h-\[80vh\] {
+    height: 80vh;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
   }
@@ -1674,12 +1742,22 @@ h6 {
     background-color: rgb(0 0 0 / 0.2);
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-\[24px\] {
     font-size: 24px;
   }
 
   .md\:text-\[68px\] {
     font-size: 68px;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:backdrop-blur-lg {
@@ -1693,6 +1771,11 @@ h6 {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .lg\:text-\[94px\] {

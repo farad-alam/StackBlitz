@@ -8,6 +8,9 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
       },
+      colors:{
+        "power-text" : "#4cedff"
+      }
     },
   },
   plugins: [require("daisyui")],

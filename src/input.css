@@ -52,3 +52,10 @@ h6 {
   background-size: cover;
   background-position: center;
 }
+
+#powered-by-webcontainers{
+  background-image: url("/asset/web-container.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
