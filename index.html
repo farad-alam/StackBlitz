@@ -74,7 +74,7 @@
         </div>
       </nav>
       <!-- banar section -->
-      <section id="banar" class="mt-[60px]">
+      <section id="banar" class="mt-[60px] relative">
         <div id="banar-context" class="w-[95%] mx-auto pb-20 pt-20 flex">
           <!-- banar contetn area -->
           <div id="content-aria" class="z-10">
@@ -98,18 +98,21 @@
             </button>
           </div>
           <!-- video aria -->
-          <video
+          <!-- <video
             class="bg-video reflect-video absolute right-8 bg-black p-4 w-5/12 skew-y-12 skew-x-6 rounded-lg"
             src="asset/v2.mp4"
             autoplay
             loop
             muted
             playsinline="true"
-          ></video>
+          ></video> -->
+          <!-- svg bg -->
+          <div id="banar-bg" class="absolute right-0 w-6/12 h-5/6"></div>
         </div>
       </section>
     </header>
     <main>
+      <!-- Portfolio -->
       <section id="portfolio" class="">
         <!-- portfolio context -->
         <div id="bg-blur" class="bg-black/70 backdrop-blur-2xl">
@@ -166,6 +169,49 @@
           </div>
         </div>
       </section>
+      <!-- Feedback -->
+      <section id="feedback" data-theme="light" class="min-h-96 max-h-fit grid">
+        <div
+          id="feedback-context"
+          class="w-10/12 md:w-7/12 mx-auto items-center gap-4 flex flex-col md:flex-row justify-center"
+        >
+          <img
+            class="h-[84px] rounded-full"
+            src="https://stackblitz.com/_astro/ilya_grigorik.wwuGm1Qk_1AX5M8.webp"
+            alt=""
+          />
+          <!-- feedback-content -->
+          <div id="feedback-content" class="space-y-5 text-black">
+            <p class="text-lg md:text-[24px]">
+              "StackBlitz unlocks a true one-click startup experience with the
+              full stack running in the browser<span class="font-bold"
+                >—it's a game-changer.</span
+              >"
+            </p>
+            <div id="customer-identity" class="flex gap-5 text-sm">
+              <p class="font-bold">Ilya Grigorik</p>
+              <p>Principal Engineer at Shopify</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Powered By Webcontainers -->
+      <section id="powered-by-webcontainers">
+        <div id="pbw-context">
+          <!-- content section -->
+          <div id="content">
+            <div id="poeredby">
+              <h5>Powered by WebContainers</h5>
+            </div>
+            <h1>
+              <strong>Faster</strong> and <strong>more secure</strong> <br />
+              than local.
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- demo section -->
+      <section class="w-full h-96 bg-gray-950"></section>
     </main>
   </body>
 </html>
